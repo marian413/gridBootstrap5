@@ -1,0 +1,50 @@
+/* .container-fluid{
+display: grid;
+grid-template-areas: 
+"heade heade heade heade heade heade"
+"side side mainc mainc mainc mainc"
+"side side mainc mainc mainc mainc"
+"side side mainc mainc mainc mainc"
+"side side mainc mainc mainc mainc"
+"side side widget widget stat stat"
+"side side widget widget stat stat"
+"foot foot foot foot foot foot"
+;
+} */
+
+  .header, .footer {
+    background-color: #6f42c1;
+    color: white;
+
+  }
+  .header{
+    grid-area: heade;
+  }
+  .footer {
+    grid-area: foot;
+  }
+  .sidebar {
+    background-color: #ffc107; 
+    color: #212529; 
+    grid-area: side;
+  }
+  .main-content {
+    background-color: #17a2b8; 
+    color: white;
+    grid-area: mainc;
+  }
+  .widget {
+    background-color: #28a745; 
+    color: white;
+    grid-area: widget;
+  }
+  .statistics {
+    background-color: #dc3545; 
+    grid-area: stat;
+  }
+  .main {
+    height: 70%;
+  }
+  .widget, .statistics {
+    /* height: 50%; */
+  }
